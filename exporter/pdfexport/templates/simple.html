@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rechnung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <style type="text/css">
+    .container {
+      max-width: 800px;
+      padding-top: 100px;
+    }
+    p {font-size: medium; text-align: left; display:flex; flex-direction: column}
+    h4 {text-align: center;}
+    h3 {text-align:center; color: rgb(19, 17, 17);}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="file:///home/linlin/projects/auto_report/jinja_report/yinyang1.png" style="float: left; WIDTH:80px; HEIGHT:80px"/>
+    <h3> <b>很酷的报告</b></h3>
+    <h4><b>A cool report by Jinja2</b></h4>
+
+    <p style="text-align:center; font-size: small;">Volkstr. 001, 000000 Peaceland
+    <br>
+    Tel: 88-88888888,   Fax: 00-00000000
+    <br>
+    Email: abc@xxx.xx,   web: linlinzhao.com
+    </p>
+    <br>
+   <p>Name: {{name}}</p>
+   <p>Address: {{address}}</p>
+   <!--ul>
+     {% for n in my_list %}
+     <li>{{n}}</li>
+     {% endfor %}
+   </ul !-->
+   <br>
+   <br>
+   <h5 style="font-size: large;"><b>Rechnung</b></h5>
+   <p>Invoice No.: {{invoice}}</p>
+   <p>Date: {{date}}</p>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
